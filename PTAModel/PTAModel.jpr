@@ -60,6 +60,7 @@
    </list>
    <value n="defaultPackage" v="imeiv.ptamodel"/>
    <hash n="ejbModuleContainer">
+      <value n="dbConnection" v="ERPSolPTAConn"/>
       <value n="ejbMetaDataPrefs" v="PREFASANNON"/>
       <value n="ejbVersion" v="3.0"/>
       <value n="ejbVersionMinor" v="0.1"/>
@@ -95,6 +96,10 @@
             <value n="id" v="TopLink"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Oracle XML Parser v2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <list n="libraryReferences">
          <hash>
@@ -109,6 +114,10 @@
             <value n="id" v="TopLink"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Oracle XML Parser v2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
@@ -117,6 +126,11 @@
    <hash n="oracle.toplink.workbench.addin">
       <hash n="persistence-list">
          <value n="jpa-version" v="2.0"/>
+         <hash n="src$META-INF$persistence.xml">
+            <hash n="PTAModel">
+               <value n="development-database" v="ERPSolPTAConn"/>
+            </hash>
+         </hash>
       </hash>
    </hash>
 </jpr:project>

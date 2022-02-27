@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProviderSettings xmlns="http://xmlns.oracle.com/ide/hash">
+   <hash n="dataTypeSettings">
+      <value n="databaseType" v="Oracle Database"/>
+      <value n="databaseVersion" v="112"/>
+   </hash>
+   <value n="id" v="d73dddc5-4e8b-4d09-bb37-8a66dfa2013d"/>
+   <value n="name" v="ERPSolPTAConn"/>
+</ProviderSettings>
