@@ -28,5 +28,6 @@
    </list>
    <list n="listOfChildren">
       <hash><url n="URL" path="PTAModel/PTAModel.jpr"/></hash>
+      <hash><url n="URL" path="PTAWebService/PTAWebService.jpr"/></hash>
    </list>
 </jws:workspace>
