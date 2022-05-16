@@ -23,6 +23,7 @@ import javax.ws.rs.QueryParam;
 @Stateless
 @Path("webservice")
 @Consumes("application/json")
+@Produces("application/json")
 
 
 public class PTAIMEIImpl {
@@ -35,10 +36,10 @@ public class PTAIMEIImpl {
 
     @GET
     @Produces("application/json")
-    @Path("/")
+    @Path("/getone")
     public List<PTARequestResult> getVwItemImeiInformationFindByIMEI(@QueryParam("pimei1") String pimei1,
-                                                                          @QueryParam("pimei2") String pimei2,
-                                                                          @QueryParam("papikey") String papikey) {
+                                                                     @QueryParam("pimei2") String pimei2,
+                                                                     @QueryParam("papikey") String papikey) {
         List<VwItemImeiInformation> limeiinfo=mySessionBean.getVwItemImeiInformationFindByIMEI(pimei1, pimei2, papikey);
         
         PTARequestResult ptares=null;
@@ -66,11 +67,7 @@ public class PTAIMEIImpl {
         item.add(ptares);
         
         return item;
-//        System.out.println(info.getStatus());
-//        System.out.println(info.getImei1());
-//        System.out.println(info.getImei2());
-//        
-//        return limeiinfo;
+
 
     }
 
