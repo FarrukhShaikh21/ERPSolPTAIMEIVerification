@@ -1,0 +1,360 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
+  <name>VW_ITEM_IMEI_INFORMATION</name>
+  <columns>
+    <column>
+      <name>STATUS</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">20</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>STATUS</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>VW_ITEM_IMEI_INFORMATION</name>
+              <identifier class="java.math.BigDecimal">88426</identifier>
+              <schemaName>QSHOP</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>RESPONSE_CODE</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>RESPONSE_CODE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>VW_ITEM_IMEI_INFORMATION</name>
+              <identifier class="java.math.BigDecimal">88426</identifier>
+              <schemaName>QSHOP</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>MESSAGE</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>CHAR</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>MESSAGE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>VW_ITEM_IMEI_INFORMATION</name>
+              <identifier class="java.math.BigDecimal">88426</identifier>
+              <schemaName>QSHOP</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>IMEI1</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">40</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>IMEI1</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>VW_ITEM_IMEI_INFORMATION</name>
+              <identifier class="java.math.BigDecimal">88426</identifier>
+              <schemaName>QSHOP</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>IMEI2</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">40</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>IMEI2</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>VW_ITEM_IMEI_INFORMATION</name>
+              <identifier class="java.math.BigDecimal">88426</identifier>
+              <schemaName>QSHOP</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>APIKEY</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">15</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>CHAR</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>APIKEY</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>VW_ITEM_IMEI_INFORMATION</name>
+              <identifier class="java.math.BigDecimal">88426</identifier>
+              <schemaName>QSHOP</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <name>PK_VW_ITEM_IMEI_INFO</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>IMEI1</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>VW_ITEM_IMEI_INFORMATION</name>
+            <schemaName>QSHOP</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>QSHOP</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.NameBasedID">
+        <name>PK_VW_ITEM_IMEI_INFO</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>VW_ITEM_IMEI_INFORMATION</name>
+          <schemaName>QSHOP</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>QSHOP</schemaName>
+        <type>INDEX</type>
+      </indexID>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PK_VW_ITEM_IMEI_INFO</name>
+            <childObjectNames>
+              <childObjectName>IMEI1</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>VW_ITEM_IMEI_INFORMATION</name>
+              <identifier class="java.math.BigDecimal">88426</identifier>
+              <schemaName>QSHOP</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <indexes>
+    <index>
+      <name>PK_VW_ITEM_IMEI_INFO</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>IMEI1</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>IMEI1</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>PK_VW_ITEM_IMEI_INFO</name>
+                  <identifier class="java.math.BigDecimal">88427</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>VW_ITEM_IMEI_INFORMATION</name>
+                    <identifier class="java.math.BigDecimal">88426</identifier>
+                    <schemaName>QSHOP</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>QSHOP</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PK_VW_ITEM_IMEI_INFO</name>
+            <identifier class="java.math.BigDecimal">88427</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>VW_ITEM_IMEI_INFORMATION</name>
+              <identifier class="java.math.BigDecimal">88426</identifier>
+              <schemaName>QSHOP</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>QSHOP</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>USERS</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <schema>
+        <name>QSHOP</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </index>
+  </indexes>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>VW_ITEM_IMEI_INFORMATION</name>
+        <identifier class="java.math.BigDecimal">88426</identifier>
+        <schemaName>QSHOP</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>0</maxExtent>
+        <minExtent>1</minExtent>
+        <nextExtent>1048576</nextExtent>
+        <percentFree>10</percentFree>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>USERS</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleTableProperties</key>
+      <value class="oracle.javatools.db.ora.OracleTableProperties">
+        <tableCompression>NOCOMPRESS</tableCompression>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>QSHOP</name>
+  </schema>
+</table>
