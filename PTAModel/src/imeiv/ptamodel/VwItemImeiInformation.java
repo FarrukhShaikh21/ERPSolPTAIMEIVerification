@@ -27,18 +27,24 @@ public class VwItemImeiInformation implements Serializable {
     @Column(name = "RESPONSE_CODE")
     private BigDecimal responseCode;
     private BigDecimal status;
+    private String serialNo;
+    private String color;
+    private Integer isAssembled;
 
     public VwItemImeiInformation() {
     }
 
     public VwItemImeiInformation(String apikey, String imei1, String imei2, String message, BigDecimal responseCode,
-                                 BigDecimal status) {
+                                 BigDecimal status,String serialNo,String color,Integer isAssembled) {
         this.apikey = apikey;
         this.imei1 = imei1;
         this.imei2 = imei2;
         this.message = message;
         this.responseCode = responseCode;
         this.status = status;
+        this.serialNo=serialNo;
+        this.color=color;
+        this.isAssembled=isAssembled;
     }
 
     public String getApikey() {
@@ -87,5 +93,29 @@ public class VwItemImeiInformation implements Serializable {
 
     public void setStatus(BigDecimal status) {
         this.status = status;
+    }
+
+    public void setSerialNo(String serialNo) {
+        this.serialNo = serialNo;
+    }
+
+    public String getSerialNo() {
+        return serialNo;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setIsAssembled(Integer isAssembled) {
+        this.isAssembled = isAssembled;
+    }
+
+    public Integer getIsAssembled() {
+        return isAssembled;
     }
 }
