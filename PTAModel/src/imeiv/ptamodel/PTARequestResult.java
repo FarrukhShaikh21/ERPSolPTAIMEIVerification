@@ -11,17 +11,33 @@ public class PTARequestResult {
         this.status = status;
         this.responseCode = responseCode;
         this.message = message;
-        this.serialNo=serialNo;
+        this.serial_no=serialNo;
         this.color=color;
-        this.isAssembled=isAssembled;
+        this.is_assembled=isAssembled;
         
     }
     private Integer status ;
     private Integer responseCode;
     private String message;
-    private String serialNo;
+    private String serial_no;
     private String color;
-    private Integer isAssembled;
+    private Integer is_assembled;
+
+    public void setSerial_no(String serial_no) {
+        this.serial_no = serial_no;
+    }
+
+    public String getSerial_no() {
+        return serial_no;
+    }
+
+    public void setIs_assembled(Integer is_assembled) {
+        this.is_assembled = is_assembled;
+    }
+
+    public Integer getIs_assembled() {
+        return is_assembled;
+    }
 
 
     public void setStatus(Integer status) {
@@ -48,14 +64,6 @@ public class PTARequestResult {
         return message;
     }
 
-    public void setSerialNo(String serialNo) {
-        this.serialNo = serialNo;
-    }
-
-    public String getSerialNo() {
-        return serialNo;
-    }
-
     public void setColor(String color) {
         this.color = color;
     }
@@ -64,12 +72,5 @@ public class PTARequestResult {
         return color;
     }
 
-    public void setIsAssembled(Integer isAssembled) {
-        this.isAssembled = isAssembled;
-    }
-
-    public Integer getIsAssembled() {
-        return isAssembled;
-    }
 
 }
